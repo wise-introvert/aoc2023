@@ -105,22 +105,4 @@ export const three_partTwo = (input: string): number => {
 
     return score + getPriority([...common][0]);
   }, 0);
-
-  /*
-  return groupRucksacks.reduce((score: number, rucksacks: string): any => {
-    const sacks: string[] = rucksacks.split("\n");
-    const firstSack: string[] = sacks[0].split("");
-    const secondSack: string[] = sacks[1].split("");
-    const thirdSack: string[] = sacks[2].split("");
-
-    const common: Set<string> = new Set(
-      firstSack.filter(
-        (item: string): boolean =>
-          secondSack.includes(item) && thirdSack.includes(item)
-      )
-    );
-
-    return score + getPriority([...common][0]);
-  }, 0);
-  */
 };
