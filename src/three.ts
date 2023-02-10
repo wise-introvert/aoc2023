@@ -56,7 +56,6 @@ const ref: string[] = [
 const getPriority = (char: string): number => {
   const index: number =
     ref.findIndex((value: string): boolean => char == value) + 1;
-  console.log("index: ", index);
   return index;
 };
 
